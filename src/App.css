@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+  min-height: 90vh;
+  width: 75vw;
+  border-radius: 20px;
+  border: 1px solid rgb(216, 213, 213);
+  position: relative;
+  padding: 0.3em;
+  margin: 0.3em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  position: relative;
+  top: 3.5em;
+  /* background: red; */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  min-height: 100%;
+  width: min-content;
+  margin: 0 1em;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  transition: background 0.2s ease-in-out;
+}
+
+.nav-list li svg {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-list li:hover {
+  background: rgba(233, 231, 231, 0.692);
+}
+
+.nav-list li:hover svg {
+  transform: rotate(180deg);
+  /* Optional: Add a smooth transition effect */
+
+}
+
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-button {
+  display: flex;
+  font-weight: 400;
+}
+
+.nav-button {
+  border-radius: 50px;
+  margin-left: 1em;
+  padding: 0.5em 1em;
+  min-width: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.navigation-button button {
+  border: 1px solid black;
+  color: white;
+  background: black;
+}
+
+.button-text {
+  margin-right: 0.5em;
+}
+
+.navigation-button .login {
+  background: transparent;
+  color: black;
+  transition: background 0.2s ease-in-out;
+}
+
+.navigation-button .login:hover {
+  background: black;
+  color: white;
+}
+
+.main-container {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  width: 100%;
+  min-width: 1424px;
+  top: 197px;
+  z-index: 1;
+}
+
+.content {
+
+  position: absolute;
+  left: 10%;
+  top: -15px;
+  height: 481px;
+  width: 700px;
+}
+
+.content h1 {
+  margin: 0.1em 0;
+  font-size: 6em;
+  font-weight: 450;
+}
+
+.content p {
+  max-width: 500px;
+  margin: 1.5em 0;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+.bg-change {
+  color: rgb(159, 145, 252);
+  color: linear-gradient(94deg, rgba(159, 145, 252, 1) 0%, rgba(133, 186, 246, 1) 1%, rgba(111, 222, 242, 1) 2%);
+
+}
+
+.main-btn {
+  background: transparent;
+  border: 1px solid rgb(216, 213, 213);
+  border-radius: 25px;
+  padding: 1em 2.5em;
+  font-size: 1em;
+}
+
+.user-svg {
+  width: 700px;
+  /* background: red; */
+  position: absolute;
+  left: 10%;
+  top: 500px;
+  display: flex;
+  align-items: center;
+
+}
+
+.user-svg button {
+  padding: 1em 2em;
+  font-size: 1em;
+  border: none;
+  background: #0e0e11;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  transition: background 0.2s ease-in;
+}
+
+.user-svg button:hover {
+  background: #0e0e11ec;
+
+}
+
+.user-img {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  background: red;
+}
+
+.user-image {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid rgb(216, 213, 213);
+}
+
+.user-image.one {
+  position: absolute;
+  bottom: 5px;
+  left: 200px;
+}
+
+.user-image.two {
+  position: absolute;
+  bottom: 5px;
+  left: 240px;
+}
+
+.user-image.three {
+  position: absolute;
+  bottom: 5px;
+  left: 280px;
+}
+
+.count {
+  position: absolute;
+  bottom: 5px;
+  left: 360px;
+}
+
+.number {
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+
+.count span {
+  color: #747780;
+
+}
+
+main img {
+  height: 728px;
+  width: 464px;
+}
+
+.image-container {
+  position: absolute;
+  z-index: 1;
+  right: 15%;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.aside-container {
+  z-index: 0;
+  background: rgb(148, 255, 230);
+  background: linear-gradient(132deg, rgba(148, 255, 230, 1) 0%, rgba(205, 252, 186, 1) 41%, rgba(211, 252, 181, 1) 51%, rgba(129, 166, 245, 1) 72%, rgba(148, 255, 230, 1) 89%);
+  width: 35%;
+  height: 98.5%;
+  position: absolute;
+  top: 0.75%;
+  right: 0.4em;
+  border-radius: 20px;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-12-19 9:55:30
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-text {
+  -webkit-animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+  animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-12-19 9:55:30
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.slide-top {
+  -webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+  animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-12-19 9:59:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+.slide-in-blurred-bottom {
+  -webkit-animation: slide-in-blurred-bottom 1s ease-in-out 1s both;
+  animation: slide-in-blurred-bottom 1s ease-in-out 1s both
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-12-19 10:7:13
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(.2);
+    transform: translateY(1000px) scaleY(2.5) scaleX(.2);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+@keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(.2);
+    transform: translateY(1000px) scaleY(2.5) scaleX(.2);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 1s 1.5s both;
+  animation: slide-in-bottom 1s 1.5s both
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-12-19 10:14:32
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
