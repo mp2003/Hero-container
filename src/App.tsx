@@ -1,4 +1,3 @@
-import React from "react";
 import { FaApple } from "react-icons/fa";
 
 import { MdArrowOutward } from "react-icons/md";
