@@ -1,6 +1,10 @@
 import { FaApple } from "react-icons/fa";
 
 import { MdArrowOutward } from "react-icons/md";
+import user1 from "./assets/user1.webp";
+import user2 from "./assets/user2.webp";
+import user3 from "./assets/user3.webp";
+import mobile from "./assets/1JFj3FwlaG94oqSBTQUOdyY6nHA.webp";
 
 import "./App.css";
 
@@ -91,9 +95,9 @@ const App = () => {
               </button>
 
               <div className="user-img">
-                <img src="user1.webp" className="user-image one" alt="" />
-                <img src="user2.webp" className="user-image two" alt="" />
-                <img src="user3.webp" className="user-image three" alt="" />
+                <img src={user1} className="user-image one" alt="" />
+                <img src={user2} className="user-image two" alt="" />
+                <img src={user3} className="user-image three" alt="" />
               </div>
 
               <div className="count">
@@ -102,11 +106,7 @@ const App = () => {
               </div>
             </div>
             <div className="image-container slide-in-bottom">
-              <img
-                src="1JFj3FwlaG94oqSBTQUOdyY6nHA.webp"
-                alt=""
-                className="slide-in-bottom"
-              />
+              <img src={mobile} alt="" className="slide-in-bottom" />
             </div>
           </main>
           <aside className="aside-container fade-in"></aside>
