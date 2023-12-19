@@ -245,6 +245,7 @@ main img {
   position: absolute;
   z-index: 1;
   right: 15%;
+  top: -5px;
 }
 
 .image-container::after {
