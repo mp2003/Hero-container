@@ -1,5 +1,5 @@
 import { FaApple } from "react-icons/fa";
-import { ReactDOM } from "react";
+
 import { MdArrowOutward } from "react-icons/md";
 import user1 from "./assets/user1.webp";
 import user2 from "./assets/user2.webp";
